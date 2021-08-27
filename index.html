@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter code</title>
+
+    <style>
+        input{
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+
+        button{
+            border-radius: 20px;
+            background-color: bisque;
+            border: 2px dashed pink;
+            font-family: algerian;
+            font-size: 150%;
+        }
+
+        .invert{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+    <input type="text" id='cd'>
+    <br><br>
+    <img class="invert" src="https://www.graphicsfactory.com/clip-art/image_files/image/5/1300585-occupations-064-12202006.gif" height="50px" alt="(*^_^*)">
+    <button id="btn" onclick='ent()'>Go to Heaven</button>
+    <img class="invert" src="https://www.graphicsfactory.com/clip-art/image_files/image/5/1300585-occupations-064-12202006.gif" height="50px" alt="(*^_^*)">
+
+    <div id="chk"></div>
+    </center>
+</body>
+</html>
+
+<script>
+    var input = document.getElementById("cd");
+
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            document.getElementById("btn").click();
+        }
+    });
+
+    function ent(){
+        var cd=input.value;
+
+        if(isNaN(cd)){
+            realheaven();
+        }
+        else{
+            if(cd.length == 6){
+                window.open('https://nhentai.net/g/'+cd,'_blank');
+            }
+            else{
+                realheaven();
+                // document.getElementById('chk').innerHTML="cd";
+            }
+        }
+    }
+    // }
+
+    function realheaven(){
+        var imgnum = Math.floor(Math.random()*10);
+
+        if(imgnum == 0){
+            window.open('https://www.searchinfluence.com/wp-content/uploads/2020/09/Stairway-to-Higher-Ed-Heaven-4.jpg','_blank');
+        }
+        if(imgnum == 1){
+            window.open('https://www.osvnews.com/wp-content/uploads/2020/09/shutterstock_1227421639-820x394.jpg','_blank');
+        }
+        if(imgnum == 2){
+            window.open('https://ca-times.brightspotcdn.com/dims4/default/dca0110/2147483647/strip/true/crop/2048x1152+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fwww.trbimg.com%2Fimg-5d63ed97%2Fturbine%2Fsns-201908130006--tms--bgrahamctnym-a20190826-a-20190826','_blank');
+        }
+        if(imgnum == 3){
+            window.open('https://d.newsweek.com/en/full/966320/6-8-pearly-gates.jpg','_blank');
+        }
+        if(imgnum == 4){
+            window.open('https://www.denofgeek.com/wp-content/uploads/2016/05/heaven-7.jpg?fit=620%2C400','_blank');
+        }
+        if(imgnum == 5){
+            window.open('https://cdn.vox-cdn.com/thumbor/eJCe_LQh_3x6e33dTpglEPev9d4=/0x0:1200x864/1200x800/filters:focal(504x336:696x528)/cdn.vox-cdn.com/uploads/chorus_image/image/64532560/1473315.0.jpg','_blank');
+        }
+        if(imgnum == 6){
+            window.open('https://images.unsplash.com/photo-1440407876336-62333a6f010f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhdmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80','_blank');
+        }
+        if(imgnum == 7){
+            window.open('https://cdn.catholic.com/wp-content/uploads/AdobeStock_118678637-1200x400.jpeg','_blank');
+        }
+        if(imgnum == 8){
+            window.open('https://hope1032.com.au/wp-content/uploads/2020/12/heaven-1200x480-1.png','_blank');
+        }
+        if(imgnum == 9){
+            window.open('https://www.taxation.co.uk/images/default-source/files/field/image/cameron.jpg','_blank');
+        }
+    }
+</script>
